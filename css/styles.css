@@ -15,6 +15,7 @@ body {
     display: flex;
     width: 50px;
     height: 50px;
+    z-index: 3;
 }
 
 .hero-banner {
@@ -25,6 +26,7 @@ body {
     width: auto;
     height: 500px;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .hero-banner img {
@@ -33,9 +35,13 @@ body {
 }
 
 .hero-banner h1 {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
 }
 
 .section-one {
@@ -44,7 +50,63 @@ body {
     flex-wrap: wrap;
 }
 
+.area-one:hover {
+    filter: brightness(30%);
+}
+
+.area-two:hover {
+    filter: brightness(30%);
+}
+
+.area-three:hover {
+    filter: brightness(30%);
+}
+
+.area-four:hover {
+    filter: brightness(30%);
+}
+
 .section-one img {
     width: 400px;
     height: 400px;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.site-related-stuff {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.section-two {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.call-to-action {
+    display: flex;
+    background-color: burlywood;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
