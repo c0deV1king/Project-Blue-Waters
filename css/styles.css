@@ -15,12 +15,26 @@ body {
     padding: 0;
 }
 
+a:visited {
+    color: orange;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     height: 30px;
     padding: 5px;
     background-color: blue;
+}
+
+.header p {
+    align-self: center;
+    margin-right: 5px;
+}
+
+.header p a {
+    text-decoration: none;
+    color: white;
 }
 
 .logo {
@@ -38,7 +52,7 @@ body {
     width: auto;
     height: 500px;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .hero-banner img {
@@ -164,7 +178,8 @@ body {
 .fact-week {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-image: url(/img/yucar-studios-cfR-V1QuEKw-unsplash.jpg);
+    background-size: cover;
     margin-bottom: 30px;
 }
 
@@ -178,4 +193,10 @@ body {
     font-size: 32px;
     width: 800px;
     align-self: center;
+}
+
+.cta-button button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
 }
