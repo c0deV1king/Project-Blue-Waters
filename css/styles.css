@@ -8,11 +8,17 @@ Each card will link to a wiki page on that animal located on
 my site as a "mini wiki" */
 
 
+/* 
+Colour pallete
+Blue: 0ec8d7ff 
+*/
+
 
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 a:visited {
@@ -24,24 +30,28 @@ a:visited {
     justify-content: space-between;
     height: 30px;
     padding: 5px;
-    background-color: blue;
+    background-color: #e8e8e8ff;
 }
 
 .header p {
     align-self: center;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .header p a {
     text-decoration: none;
-    color: white;
+    color: #0ec8d7ff;
 }
 
 .logo {
     display: flex;
     width: 50px;
-    height: 50px;
+    height: 80px;
     z-index: 3;
+    border-radius: 2px;
+    filter: drop-shadow(0 0 0.25rem black);
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 .hero-banner {
@@ -58,16 +68,6 @@ a:visited {
 .hero-banner img {
     height: 500px;
     width: 100%;
-}
-
-.hero-banner h1 {
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
 }
 
 .section-one {
