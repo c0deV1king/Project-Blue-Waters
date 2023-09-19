@@ -22,7 +22,7 @@ body {
 }
 
 a:visited {
-    color: orange;
+    color: black;
 }
 
 .header {
@@ -54,20 +54,83 @@ a:visited {
     margin-top: 15px;
 }
 
-.hero-banner {
-    /* background-image: url(/img/yucar-studios-cfR-V1QuEKw-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-    width: auto;
-    height: 500px;
-    flex-direction: column;
-    margin-bottom: 30px;
+/* banner images / slider */
+.banner-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 32px;
 }
 
-.hero-banner img {
-    height: 500px;
-    width: 100%;
+.slider-wrapper {
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 24px 48px -12px black;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 48px;
+    height: 8px;
+    border-radius: 15px;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: solid 1px #e8e8e8ff;
+    height: 30px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 150px;
+}
+
+.links li {
+    display: flex;
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.links li a:hover {
+    background-color: #e8e8e8ff;
 }
 
 .section-one {
@@ -133,6 +196,40 @@ a:visited {
 .section-one img {
     width: 400px;
     height: 400px;
+}
+
+.fact-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.fact-content-left img {
+    width: 400px;
+    height: 400px;
+}
+
+.fact-content-left p {
+    font-size: 32px;
+    padding: 100px;
+}
+
+.fact-content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.fact-content-right img {
+    width: 400px;
+    height: 400px;
+}
+
+.fact-content-right p {
+    font-size: 32px;
+    padding: 100px;
 }
 
 .footer {
